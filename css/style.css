@@ -1,0 +1,57 @@
+body {
+  display: grid;
+  grid-template-columns: 1fr 6fr 1fr;
+}
+
+main {
+  grid-column: 2;
+  text-align: center;
+}
+
+section,
+p {
+  text-align: center;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+blockquote {
+  font-style: italic;
+  margin: 0 0 1.5625em;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+button {
+  color: #fff;
+  text-transform: uppercase;
+  background: #008b8b;
+  padding: 10px;
+  border-radius: 50px;
+  display: inline-block;
+  border: none;
+  cursor: pointer;
+  animation: pulse;
+  animation-iteration-count: infinite;
+  animation-duration: 1.2s;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+  }
+
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+  }
+
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+}
